@@ -16,66 +16,7 @@
 
         body {
             font-family: sans-serif;
-        }
-
-        /* ---- button ---- */
-
-        .button {
-            display: inline-block;
-            padding: 10px 18px;
-            margin-bottom: 10px;
-            background: #EEE;
-            border: none;
-            border-radius: 7px;
-            background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2));
-            color: #222;
-            font-family: sans-serif;
-            font-size: 16px;
-            text-shadow: 0 1px white;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: #8CF;
-            text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-            color: #222;
-        }
-
-        .button:active,
-        .button.is-checked {
-            background-color: #28F;
-        }
-
-        .button.is-checked {
-            color: white;
-            text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
-        }
-
-        .button:active {
-            box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
-        }
-
-        /* ---- button-group ---- */
-
-        .button-group:after {
-            content: '';
-            display: block;
-            clear: both;
-        }
-
-        .button-group .button {
-            float: left;
-            border-radius: 0;
-            margin-left: 0;
-            margin-right: 1px;
-        }
-
-        .button-group .button:first-child {
-            border-radius: 0.5em 0 0 0.5em;
-        }
-
-        .button-group .button:last-child {
-            border-radius: 0 0.5em 0.5em 0;
+            background: #f7f5f2;
         }
 
         /* ---- isotope ---- */
@@ -109,8 +50,19 @@
 
         /*selector*/
         .filters-select {
-            font-size: 20px;
+            font-size: 28px;
             font-weight: bold;
+            border-radius: 10px;
+            height: 45px;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        #header {
+            color: #f2f2f2;
+            font-size: 60px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+            text-align: center;
         }
         /*gallery pic hover */
         .gallery-pic:hover {
@@ -271,9 +223,9 @@
 </head>
 
 <body>
-    <h1>Gallery</h1>
+    <h1 id="header">Margie's Fine Art</h1>
 
-    <p>
+    <p align="center">
         <select class="filters-select">
             <option value="*">show all</option>
             <option value=".mixed-media">mixed media</option>
@@ -345,6 +297,27 @@
         <div class="grid-item jewelry gallery-pic" onclick="currentSlide(19)">
             <img src="assets/bracelet3.jpg">
         </div>
+        <div class="grid-item water-color gallery-pic" onclick="currentSlide(20)">
+            <img src="assets/painting1.jpg">
+        </div>
+        <div class="grid-item water-color gallery-pic" onclick="currentSlide(21)">
+            <img src="assets/painting2.jpg">
+        </div>
+        <div class="grid-item water-color gallery-pic" onclick="currentSlide(22)">
+            <img src="assets/painting3.jpg">
+        </div>
+        <div class="grid-item water-color gallery-pic" onclick="currentSlide(23)">
+            <img src="assets/painting4.jpg">
+        </div>
+        <div class="grid-item water-color gallery-pic" onclick="currentSlide(24)">
+            <img src="assets/painting5.jpg">
+        </div>
+        <div class="grid-item journals mixed-media gallery-pic" onclick="currentSlide(25)">
+            <img src="assets/journal1.jpg">
+        </div>
+        <div class="grid-item journals mixed-media gallery-pic" onclick="currentSlide(26)">
+            <img src="assets/journal2.jpg">
+        </div>
     </div>
 
     <!-- The Modal -->
@@ -359,117 +332,211 @@
 
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 19</div>
+                    <div class="numbertext">1 / 24</div>
                     <img src="assets/clay-pot1.jpg" style="width:100%;height:auto;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 19</div>
+                    <div class="numbertext">2 / 24</div>
                     <img src="assets/clay-pot2.jpg" style="width:100%;height:auto;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 19</div>
+                    <div class="numbertext">3 / 24</div>
                     <img src="assets/vessel1.jpg" style="width:100%;height:auto;">
-                    <div class="text">Click to buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 19</div>
+                    <div class="numbertext">4 / 24</div>
                     <img src="assets/vessel2.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">5 / 19</div>
+                    <div class="numbertext">5 / 24</div>
                     <img src="assets/necklace1.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">6 / 19</div>
+                    <div class="numbertext">6 / 24</div>
                     <img src="assets/clay-pot3.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">7 / 19</div>
                     <img src="assets/earrings.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">8 / 19</div>
+                    <div class="numbertext">8 / 24</div>
                     <img src="assets/vessel3.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">9 / 19</div>
+                    <div class="numbertext">9 / 24</div>
                     <img src="assets/vessel4.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">10 / 19</div>
+                    <div class="numbertext">10 / 24</div>
                     <img src="assets/bracelet.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">11 / 19</div>
+                    <div class="numbertext">11 / 24</div>
                     <img src="assets/bracelet2.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">12 / 19</div>
+                    <div class="numbertext">12 / 24</div>
                     <img src="assets/clay-pot4.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">13 / 19</div>
+                    <div class="numbertext">13 / 24</div>
                     <img src="assets/necklace2.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">14 / 19</div>
+                    <div class="numbertext">14 / 24</div>
                     <img src="assets/necklace4.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">15 / 19</div>
+                    <div class="numbertext">15 / 24</div>
                     <img src="assets/vessel5.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">16 / 19</div>
+                    <div class="numbertext">16 / 24</div>
                     <img src="assets/bracelet2.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">17 / 19</div>
+                    <div class="numbertext">17 / 24</div>
                     <img src="assets/necklace5.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">18 / 19</div>
+                    <div class="numbertext">18 / 24</div>
                     <img src="assets/clay-pot5.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">19 / 19</div>
+                    <div class="numbertext">19 / 24</div>
                     <img src="assets/bracelet3.jpg" style="width:100%;height:450px;">
-                    <div class="text">Click to Buy</div>
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">20 / 24</div>
+                    <img src="assets/painting1.jpg" style="width:100%;height:450px;">
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">21 / 24</div>
+                    <img src="assets/painting2.jpg" style="width:100%;height:450px;">
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">22 / 24</div>
+                    <img src="assets/painting3.jpg" style="width:100%;height:450px;">
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">23 / 24</div>
+                    <img src="assets/painting4.jpg" style="width:100%;height:450px;">
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">24 / 24</div>
+                    <img src="assets/painting5.jpg" style="width:100%;height:450px;">
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">25 / 25</div>
+                    <img src="assets/journal1.jpg" style="width:100%;height:450px;">
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">26 / 26</div>
+                    <img src="assets/journal2.jpg" style="width:100%;height:450px;">
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <div class="text">Click to Buy</div>
+                    </a>
                 </div>
 
                 <!-- Next and previous buttons -->
@@ -517,6 +584,8 @@
             return name.match( /ium$/ );
             }
         };
+    
+
         // bind filter on select change
         $('.filters-select').on('change', function () {
             // get filter value from option value
